@@ -1,0 +1,385 @@
+html {
+    scroll-padding-top: 100px;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(135deg, #4e256e, #0d0616, #4b2697);
+    color: #fff;
+    background-repeat: no-repeat;
+}
+
+/* section {
+    height: 100vh;
+} */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ae75da81;
+    backdrop-filter: blur(10px);
+    padding: 5px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 10;
+    border-bottom: 1px solid #fff;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.25rem;
+    /* 20px */
+    margin: 0px 20px;
+}
+
+.nav {
+    margin: 10px;
+}
+
+.nav ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    align-items: center;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+    /* 16px */
+    padding: 4px 6px;
+    font-weight: 400;
+    transition: color 0.2s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav a:hover {
+    color: #b359ff;
+    border-bottom: 1px solid #b359ff;
+}
+
+/* HOME */
+
+#about h1 {
+    text-align: center;
+    color: #b359ff;
+}
+
+.main-home {
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.main-home img {
+    width: 30%;
+    border-radius: 50%;
+    box-shadow: 3px 3px 8px #ffffff55;
+    object-fit: cover;
+}
+
+.main-home img:hover {
+    transform: translateY(-10px) scale(1.05);
+    transition: 0.3s;
+}
+
+.judul {
+    font-size: 2.5rem;
+    /* 40px */
+    font-family: sans-serif;
+}
+
+span {
+    color: #b359ff;
+}
+
+.judul button {
+    background: none;
+    padding: 15px;
+    width: 100px;
+    border-radius: 40px;
+    border: 1px solid #b359ff;
+    cursor: pointer;
+    color: #fff;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease;
+}
+
+.judul button:hover {
+    transform: translateY(-5px) scale(1.05);
+    transition: 0.3s;
+}
+
+.judul button a {
+    color: aliceblue;
+    text-decoration: none;
+}
+
+/* ABOUT */
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.introduce img {
+    /* border: 2px solid white; */
+    border-radius: 20px;
+}
+
+.teks {
+    width: 60%;
+}
+
+.teks p {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1.25rem;
+    /* 20px */
+    padding: 100px;
+}
+
+.school {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+table {
+    margin: auto;
+    width: 50%;
+    border: 1px solid white;
+    border-collapse: collapse;
+    text-align: center;
+    box-shadow: 5px 5px 10px #ffffff15;
+    border-radius: 10px;
+    color: white;
+    overflow: hidden;
+}
+
+table:hover {
+    transform: translateY(-10px) scale(1.05);
+    transition: 0.3s;
+}
+
+th,
+td {
+    padding: 10px;
+}
+
+th {
+    color: #4e256e;
+    text-transform: uppercase;
+    background-color: #b359ff;
+}
+
+/* SKILL */
+.skills h1 {
+    text-align: center;
+    margin-bottom: 50px;
+    color: #b359ff;
+    font-size: 40px;
+}
+
+.skills img {
+    width: 100px;
+    height: 100px;
+}
+
+.skill-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
+    gap: 20px;
+}
+
+.card {
+    width: 200px;
+    margin: 0 auto;
+    border: 1px solid #b359ff;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card:hover {
+    transform: translateY(-10px) scale(1.05);
+    transition: 0.3s;
+    box-shadow: 0 0 20px #b359ff55;
+}
+
+/* CSS JAVASCRIPT */
+
+#gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+    gap: 20px;
+    /* height: 500px; */
+    width: 80%;
+    margin: auto;
+}
+
+.card2 {
+    border-radius: 20px;
+    border: 1px solid #b359ff;
+    padding: 20px;
+    transition: 0.3s ease-in-out;
+}
+
+.card2 h2 {
+    color: #b359ff;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+.card2 p {
+    margin: 10px auto 25px auto;
+}
+
+.card2 a {
+    margin-bottom: 20px;
+    display: inline-block;
+    border: 1px solid #b359ff;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+
+.card2 a:hover {
+    background-color: #b359ff;
+    transition: 0.3s ease-in-out;
+    border: none;
+}
+
+.card2 img {
+    border-radius: 20px;
+    height: 200px;
+    width: 300px;
+}
+
+.card2:hover {
+    transform: translateY(-8px) scale(1.05);
+    box-shadow: 0 0 20px #b359ff55;
+}
+
+/* CONTACT */
+
+.contact {
+    margin-top: 100px;
+}
+
+.contact img {
+    height: 50px;
+    width: 50px;
+}
+
+.judul-contact {
+    text-align: center;
+    color: #b359ff;
+}
+
+.info {
+    width: 100%;
+}
+
+.card-info {
+    width: 250px;
+    margin: 0 auto;
+    margin-top: 100px;
+    border-bottom: 1px solid #b359ff;
+    color: #fff;
+}
+
+.info {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.card-info img {
+    background-color: #b359ff;
+    padding: 12px;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.card-info h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.card-info p {
+    font-size: 14px;
+    color: #bdbdbd;
+}
+
+.social {
+    /* margin-top: 50px; */
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: #b359ff;
+}
+
+.social a {
+    gap: 10px;
+}
+
+.social img {
+    background-color: #b359ff;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px #2a2a2a;
+}
+
+.social img:hover {
+    transform: translateY(-8px) scale(1.05);
+    transition: 0.3s ease-in-out;
+}
+
+
+/* FOOTER */
+
+footer {
+    background-color: #ae75da81;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    font-size: 14px;
+}
+
+footer p {
+    color: #bdbdbd;
+    display: flex;
+    justify-content: center;
+    font-size: 14px;
+}
