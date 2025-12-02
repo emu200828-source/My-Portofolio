@@ -72,6 +72,11 @@ header {
     color: #b359ff;
 }
 
+#education {
+    text-align: center;
+    color: #b359ff;
+}
+
 .main-home {
     margin-top: 100px;
     display: flex;
@@ -154,7 +159,7 @@ span {
 
 table {
     margin: auto;
-    width: 50%;
+    width: 80%;
     border: 1px solid white;
     border-collapse: collapse;
     text-align: center;
@@ -381,16 +386,16 @@ th {
 }
 
 .social {
-    /* margin-top: 50px; */
     padding: 20px;
     text-align: center;
     display: flex;
     flex-direction: column;
-    gap: 10px;
     color: #b359ff;
 }
 
-.social a {
+.social div {
+    display: flex;
+    justify-content: center;
     gap: 10px;
 }
 

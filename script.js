@@ -149,6 +149,7 @@ for (let i = 0; i < projectsLagi.length; i++) {
 
     let link = document.createElement("a");
     link.href = element.link;
+    link.target = "_blank";
     link.textContent = "Lihat Lebih Lanjut➝";
 
     card.appendChild(image);
@@ -159,4 +160,3 @@ for (let i = 0; i < projectsLagi.length; i++) {
 
     gallerry.appendChild(card);
 };
-
