@@ -54,7 +54,18 @@ const project5 = {
     link: "https://github.com/emu200828-source/kalkulator.git",
 };
 
-const projects = [project1, project2, project3, project4, project5];
+const project6 = {
+    title: "Poster Nahwu (I'rob Ayat)",
+    description:
+        "Sebuah aplikasi kalkulator sederhana yang dibangun dengan HTML, CSS, dan JavaScript murni. Fokus pada logika operasi matematika dasar dan manipulasi DOM.",
+    image: "img/nahwu.png",
+    tagsHtml: ["HTML"],
+    tagsCss: ["CSS"],
+    tagsJs: ["JavaScript"],
+    link: "https://drive.google.com/file/d/1216hLbfXOrM6v70t4me6DHI9bcbj12qJ/view?usp=sharing",
+};
+
+const projects = [project1, project2, project3, project4, project5, project6];
 
 const projectsLagi = [
     {
@@ -70,7 +81,7 @@ const projectsLagi = [
     {
         title: "Lampu Merah",
         description:
-            "Project simulasi lampu lalu lintas yang di loopingkan menggunakan logika Javascript",
+            "Project simulasi lampu lalu lintas yang di loopingkan menggunakan logika Javascript.",
         image: "img/lampu.png",
         tagsHtml: ["HTML"],
         tagsCss: ["CSS"],
@@ -100,13 +111,23 @@ const projectsLagi = [
     {
         title: "Website Portfolio",
         description:
-            "Web portofolio sebelumnya",
+            "Web portofolio sebelumnya.",
         image: "img/portofolio.png ",
         tagsHtml: ["HTML"],
         tagsCss: ["CSS"],
         tagsJs: ["JavaScript"],
         link: "https://davidanddivaindonesia.my.canva.site/presentation-portofolio-desainer-modern-ungu-hitam",
     },
+    {
+        title: "Poster Nahwu",
+        description:
+            "Poster yang berisi ayat-ayat yang di i'rob dengan mengikuti metode dari buku Al-Jurumiyyah.",
+        image: "img/nahwu.png",
+        tagsHtml: ["HTML"],
+        tagsCss: ["CSS"],
+        tagsJs: ["JavaScript"],
+        link: "https://drive.google.com/file/d/1216hLbfXOrM6v70t4me6DHI9bcbj12qJ/view?usp=sharing",
+    }
 ];
 
 const gallerry = document.getElementById("gallery");
@@ -138,3 +159,4 @@ for (let i = 0; i < projectsLagi.length; i++) {
 
     gallerry.appendChild(card);
 };
+

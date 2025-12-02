@@ -10,17 +10,14 @@ body {
     background: linear-gradient(135deg, #4e256e, #0d0616, #4b2697);
     color: #fff;
     background-repeat: no-repeat;
+    /* background: black; */
 }
-
-/* section {
-    height: 100vh;
-} */
 
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #ae75da81;
+    background-color: #ae75da5a;
     backdrop-filter: blur(10px);
     padding: 5px 0;
     position: fixed;
@@ -223,14 +220,18 @@ th {
 
 /* CSS JAVASCRIPT */
 
+#project {
+    margin-top: 100px;
+}
+
 #gallery {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     text-align: center;
     gap: 20px;
-    /* height: 500px; */
     width: 80%;
     margin: auto;
+    margin-top: 100px;
 }
 
 .card2 {
@@ -241,6 +242,8 @@ th {
 }
 
 .card2 h2 {
+    padding: 5px;
+    border-radius: 10px;
     color: #b359ff;
     margin-top: 20px;
     margin-bottom: 15px;
@@ -260,14 +263,14 @@ th {
     border-radius: 10px;
 }
 
-
 .card2 a:hover {
-    background-color: #b359ff;
+    background-color: #b459ffa1;
     transition: 0.3s ease-in-out;
     border: none;
 }
 
 .card2 img {
+    border: 1px solid #b359ff;
     border-radius: 20px;
     height: 200px;
     width: 300px;
@@ -275,7 +278,50 @@ th {
 
 .card2:hover {
     transform: translateY(-8px) scale(1.05);
-    box-shadow: 0 0 20px #b359ff55;
+    box-shadow: 0 3px 10px #b459ff;
+}
+
+.english {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+    gap: 20px;
+    width: 80%;
+    margin: auto;
+}
+
+.english img {
+    border: 1px solid #b359ff;
+    height: 160px;
+    border-radius: 20px;
+}
+
+.card3 {
+    border-radius: 20px;
+    border: 1px solid #b359ff;
+    padding: 20px;
+    transition: 0.3s ease-in-out;
+}
+
+.card3:hover {
+    transform: translateY(-8px) scale(1.05);
+    box-shadow: 0 3px 10px #b459ff;
+}
+
+.card3 a {
+    margin-bottom: 20px;
+    display: inline-block;
+    border: 1px solid #b359ff;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 10px;
+    transition: 0.3s ease-in-out;
+}
+
+.card3 a:hover {
+    background-color: #b459ffa1;
+    border: none;
 }
 
 /* CONTACT */
@@ -368,6 +414,7 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 0 10px;
 }
 
 footer ul {
