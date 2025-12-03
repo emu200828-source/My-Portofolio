@@ -167,11 +167,11 @@ table {
     border-radius: 10px;
     color: white;
     overflow: hidden;
+    transition: 0.3s ease-in-out;
 }
 
 table:hover {
     transform: translateY(-10px) scale(1.05);
-    transition: 0.3s;
 }
 
 th,
@@ -279,6 +279,7 @@ th {
     border-radius: 20px;
     height: 200px;
     width: 300px;
+    object-fit: cover;
 }
 
 .card2:hover {
