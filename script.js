@@ -76,7 +76,7 @@ const projectsLagi = [
         tagsHtml: ["HTML"],
         tagsCss: ["CSS"],
         tagsJs: ["JavaScript"],
-        link: "https://github.com/emu200828-source/kalkulator-zakat-emas.git",
+        link: " https://emu200828-source.github.io/kalkulator-zakat-emas/",
     },
     {
         title: "Lampu Merah",
