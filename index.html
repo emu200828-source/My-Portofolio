@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portofolio Imu</title>
     <link rel="icon" href="./img/icon.png">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
@@ -14,15 +14,26 @@
     <header>
         <div class="logo">
             <img src="./img/hsi.png" alt="fotoku" width="30px" height="30px"
-                style="background-color: aliceblue; border-radius: 50%; padding: 10px;">
+                style="background-color: none; border-radius: 50%; padding: 10px;">
             <h4>HSI BOARDING SCHOOL</h4>
         </div>
+        <!-- MUSIC BUTTON -->
+        <button class="music-btn" id="musicBtn" aria-label="Toggle Music">
+            🎵
+        </button>
+
+        <!-- AUDIO -->
+        <audio id="bgMusic" loop>
+            <source src="./audio/nasyid.mp3" type="audio/mpeg">
+        </audio>
+
         <nav class="nav">
             <ul>
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#project">Projects</a></li>
+                <li><a href="#task">Task</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
@@ -45,7 +56,7 @@
                 <div class="teks">
                     <p>
                         <strong>Hi everyone!</strong> <br><br>
-                        Perkenalkan, nama saya <mark style="background-color: #b359ff;">Imu Abdurroofi</mark>, tapi
+                        Perkenalkan, nama saya <mark style="background: #f2d593;">Imu Abdurroofi</mark>, tapi
                         teman-teman biasa memanggil saya Imu. <br> I’m a
                         friendly
                         and curious person who loves learning new things every day. <br> Saat ini saya masih pelajar dan
@@ -166,11 +177,11 @@
         </section>
 
         <section id="project">
-            <h1 style="text-align: center; color: #b359ff;">My Project</h1>
+            <h1 style="text-align: center; color: #f2d593;">My Project</h1>
 
             <div id="gallery"></div>
             <div>
-                <h1 style="text-align: center; color: #b359ff; margin-top: 100px; margin-bottom: 100px;">Others Project
+                <h1 style="text-align: center; color: #f2d593; margin-top: 100px; margin-bottom: 100px;">Others Project
                 </h1>
 
                 <div class="english">
@@ -198,6 +209,72 @@
                     </div>
                 </div>
             </div>
+        </section>
+
+        <section id="task">
+            <h1>My Job while on Holiday</h1>
+
+            <div class="card-task">
+                <div>
+                    <h3 class="task">Adzan dan Iqomah (5x) di masjid</h3>
+                </div>
+            </div>
+
+            <div class="card-task">
+                <h3 class="task">Mengajak orang ke masjid (5x)</h3>
+            </div>
+
+            <div class="card-task">
+                <h3 class="task">Memberi hadiah dan mewawancarai marbot masjid (2x)</h3>
+            </div>
+
+            <div class="card-task">
+                <h3 class="task">Tasmi' 1 Juz (1x) kepada Orang Tua</h3>
+            </div>
+
+            <div class="card-task">
+                <h3 class="task">Berbicara empat mata dengan orang tua (Prioritaskan Ayah) (1x)</h3>
+            </div>
+
+            <div class="card-task">
+                <h3 class="task">Memasak 5 menu selain masakan instan</h3>
+
+                <div class="foto">
+                    <div>
+                        <img src="./img/menu1.jpeg" alt="foto menu" width="150px" height="150px">
+                        <p>Sapo Tahu Seafood</p>
+                    </div>
+                    <div>
+                        <img src="./img/menu2.jpeg" alt="foto menu" width="150px" height="150px">
+                        <p>Gulai telur rebus</p>
+                    </div>
+                    <div>
+                        <img src="./img/menu3.jpeg" alt="foto menu" width="150px" height="150px">
+                        <p>Telur dadar daun bawang</p>
+                    </div>
+                    <div>
+                        <img src="./img/menu4.jpeg" alt="foto menu" width="150px" height="150px">
+                        <p>Nasi goreng Daging</p>
+                    </div>
+                    <div>
+                        <img src="./img/menu5.jpeg" alt="foto menu" width="150px" height="150px">
+                        <p>Teriyaki</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-task">
+                <h3 class="task">Menghadiri kajian offline asaatidz Ahlussunnah (1x)</h3>
+            </div>
+
+            <div class="card-task">
+                <h3 class="task">Menyimak kajian online asatidz Ahlusunnah 1(x)</h3>
+            </div>
+
+            <div class="card-task">
+                <h3 class="task">Video Vlog Bahasa Inggris</h3>
+            </div>
+
         </section>
 
         <section class="contact" id="contact">

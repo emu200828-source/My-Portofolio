@@ -1,30 +1,34 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 html {
     scroll-padding-top: 100px;
     scroll-behavior: smooth;
 }
 
 body {
-    margin: 0;
-    padding: 0;
+
     font-family: Arial, Helvetica, sans-serif;
-    background: linear-gradient(135deg, #4e256e, #0d0616, #4b2697);
+    background: #283845;
     color: #fff;
-    background-repeat: no-repeat;
-    /* background: black; */
 }
 
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #ae75da5a;
+    background: #f2d593;
     backdrop-filter: blur(10px);
     padding: 5px 0;
     position: fixed;
     width: 100%;
     top: 0;
     z-index: 10;
-    border-bottom: 1px solid #fff;
+    box-shadow: 0px 4px 10px #f2d59380;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
 }
 
 .logo {
@@ -34,6 +38,14 @@ header {
     font-size: 1.25rem;
     /* 20px */
     margin: 0px 20px;
+}
+
+.logo h4 {
+    color: #283845;
+}
+
+.logo img {
+    background: none;
 }
 
 .nav {
@@ -49,32 +61,75 @@ header {
 
 .nav a {
     text-decoration: none;
-    color: #fff;
+    color: #283845;
     font-size: 1rem;
     /* 16px */
-    padding: 4px 6px;
+    padding: 5px;
     font-weight: 400;
-    transition: color 0.2s ease-in-out;
+    transition: 0.4s ease-in-out;
     display: flex;
     align-items: center;
     justify-content: center;
+    border-radius: 5px;
 }
 
 .nav a:hover {
-    color: #b359ff;
-    border-bottom: 1px solid #b359ff;
+    background: #283845;
+    color: #f2d593;
+}
+
+.music-btn {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    background: #f2d593;
+    color: #283845;
+    border: none;
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 22px;
+    box-shadow: 0 0 15px #f2d59380;
+    transition: all 0.3s ease;
+    z-index: 999;
+}
+
+.music-btn:hover {
+    transform: scale(1.1);
+}
+
+.music-btn.active {
+    background: #283845;
+    color: #f2d593;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
 }
 
 /* HOME */
 
-#about h1 {
-    text-align: center;
-    color: #b359ff;
+#about {
+    margin-top: 200px;
 }
 
-#education {
+#about h1 {
     text-align: center;
-    color: #b359ff;
+    color: #f2d593;
+}
+
+#education h1 {
+    text-align: center;
+    color: #f2d593;
+}
+
+#education p {
+    text-align: center;
 }
 
 .main-home {
@@ -87,13 +142,12 @@ header {
 .main-home img {
     width: 30%;
     border-radius: 50%;
-    box-shadow: 3px 3px 8px #ffffff55;
-    object-fit: cover;
+    transition: 0.4s ease-in-out;
 }
 
 .main-home img:hover {
     transform: translateY(-10px) scale(1.05);
-    transition: 0.3s;
+    box-shadow: 1px 0px 8px #f2d593;
 }
 
 .judul {
@@ -103,30 +157,30 @@ header {
     padding: 15px;
     border-radius: 10px;
     transition: 0.3s ease-in-out;
+    cursor: pointer;
 }
 
-/* .judul:hover {
-    transform: translateY(-3px) scale(1.05);
-    border: 1px solid #b359ff;
-} */
+.judul:hover {
+    box-shadow: 0rem 0rem 10px #f2d593;
+}
 
 span {
-    color: #b359ff;
+    color: #f2d593;
 }
 
 .judul button {
     background: none;
-    padding: 15px;
+    padding: 10px;
     width: 100px;
     border-radius: 40px;
-    border: 1px solid #b359ff;
+    border: 1px solid #f2d593;
     cursor: pointer;
     color: #fff;
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease;
 }
 
 .judul button:hover {
-    transform: translateY(-5px) scale(1.05);
+    transform: translateX(2.5rem) scale(1.05);
     transition: 0.3s;
 }
 
@@ -188,16 +242,16 @@ td {
 }
 
 th {
-    color: #4e256e;
+    color: #283845;
     text-transform: uppercase;
-    background-color: #b359ff;
+    background-color: #f2d593;
 }
 
 /* SKILL */
 .skills h1 {
     text-align: center;
     margin-bottom: 50px;
-    color: #b359ff;
+    color: #f2d593;
     font-size: 40px;
 }
 
@@ -215,8 +269,9 @@ th {
 
 .card {
     width: 200px;
+    height: 200px;
     margin: 0 auto;
-    border: 1px solid #b359ff;
+    border: 1px solid #f2d593;
     border-radius: 10px;
     padding: 20px;
     display: flex;
@@ -228,7 +283,7 @@ th {
 .card:hover {
     transform: translateY(-10px) scale(1.05);
     transition: 0.3s;
-    box-shadow: 0 0 20px #b359ff55;
+    box-shadow: 0 0 20px #f2d59355;
 }
 
 .progress {
@@ -241,13 +296,15 @@ th {
 
 .progress-fill {
     height: 100%;
-    background: #b359ff;
+    background: #f2d593;
     width: 0;
     animation: fill 1.4s ease forwards;
 }
 
 @keyframes fill {
-    to { width: var(--value); }
+    to {
+        width: var(--value);
+    }
 }
 
 /* CSS JAVASCRIPT */
@@ -268,7 +325,7 @@ th {
 
 .card2 {
     border-radius: 20px;
-    border: 1px solid #b359ff;
+    border: 1px solid #f2d593;
     padding: 20px;
     transition: 0.3s ease-in-out;
 }
@@ -276,7 +333,7 @@ th {
 .card2 h2 {
     padding: 5px;
     border-radius: 10px;
-    color: #b359ff;
+    color: #f2d593;
     margin-top: 20px;
     margin-bottom: 15px;
 }
@@ -288,7 +345,7 @@ th {
 .card2 a {
     margin-bottom: 20px;
     display: inline-block;
-    border: 1px solid #b359ff;
+    border: 1px solid #f2d593;
     color: #fff;
     text-decoration: none;
     padding: 10px;
@@ -296,13 +353,14 @@ th {
 }
 
 .card2 a:hover {
-    background-color: #b459ffa1;
+    background-color: #f2d593;
     transition: 0.5s ease-in-out;
     border: none;
+    color: #283845;
 }
 
 .card2 img {
-    border: 1px solid #b359ff;
+    border: 1px solid #f2d593;
     border-radius: 20px;
     height: 200px;
     width: 300px;
@@ -311,7 +369,7 @@ th {
 
 .card2:hover {
     transform: translateY(-8px) scale(1.05);
-    box-shadow: 0 3px 10px #b459ff;
+    box-shadow: 0 0 20px #f2d59355;
 }
 
 .english {
@@ -324,27 +382,27 @@ th {
 }
 
 .english img {
-    border: 1px solid #b359ff;
+    border: 1px solid #f2d593;
     height: 160px;
     border-radius: 20px;
 }
 
 .card3 {
     border-radius: 20px;
-    border: 1px solid #b359ff;
+    border: 1px solid #f2d593;
     padding: 20px;
     transition: 0.3s ease-in-out;
 }
 
 .card3:hover {
     transform: translateY(-8px) scale(1.05);
-    box-shadow: 0 3px 10px #b459ff;
+    box-shadow: 0 0 20px #f2d59355;
 }
 
 .card3 a {
-    margin-bottom: 20px;
+    margin-top: 20px;
     display: inline-block;
-    border: 1px solid #b359ff;
+    border: 1px solid #f2d593;
     color: #fff;
     text-decoration: none;
     padding: 10px;
@@ -353,8 +411,56 @@ th {
 }
 
 .card3 a:hover {
-    background-color: #b459ffa1;
+    background-color: #f2d593;
     border: none;
+    color: #283845;
+}
+
+/* TUGAS LIBURAN */
+
+#task h1, h3 {
+    color: #f2d593;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.task {
+    color: #f2d593;
+    margin-bottom: 50px;
+}
+
+.card-task {
+    padding: 20px;
+    margin-top: 50px;
+}
+
+.card-task p {
+    color: #f2d593;
+}
+
+.foto {
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;    
+}
+
+.foto img {
+    border-radius: 50%;
+}
+
+.foto div {
+    border: 1px solid #f2d593;
+    padding: 30px;
+    border-radius: 5px;
+    width: 300px;
+}
+
+.foto div:hover {
+    transform: translateY(-5px) scale(1.05);
+    transition: 0.3s;
+    box-shadow: 0 0 20px #f2d59355;
 }
 
 /* CONTACT */
@@ -370,7 +476,7 @@ th {
 
 .judul-contact {
     text-align: center;
-    color: #b359ff;
+    color: #f2d593;
 }
 
 .info {
@@ -380,21 +486,22 @@ th {
 .card-info {
     width: 250px;
     margin: 0 auto;
-    margin-top: 100px;
-    border-bottom: 1px solid #b359ff;
+    /* margin-top: 40px; */
+    border-bottom: 1px solid #f2d593;
+    padding: 11px;
     color: #fff;
 }
 
 .info {
     display: flex;
     flex-wrap: wrap;
-    gap: 50px;
+    gap: 10px;
     text-align: center;
     cursor: pointer;
 }
 
 .card-info img {
-    background-color: #b359ff;
+    background-color: #f2d593;
     padding: 12px;
     border-radius: 50%;
     width: 20px;
@@ -418,7 +525,8 @@ th {
     text-align: center;
     display: flex;
     flex-direction: column;
-    color: #b359ff;
+    color: #f2d593;
+    margin-top: 50px;
 }
 
 .social div {
@@ -428,10 +536,10 @@ th {
 }
 
 .social img {
-    background-color: #b359ff;
+    background: #f2d593;
     padding: 10px;
     border-radius: 10px;
-    box-shadow: 3px 3px 10px #2a2a2a;
+    margin-top: 20px;
 }
 
 .social img:hover {
@@ -443,11 +551,12 @@ th {
 /* FOOTER */
 
 footer {
-    background-color: #ae75da81;
+    background-color: #f2d593;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 10px;
+    padding: 10px;
+    margin-top: 20px;
 }
 
 footer ul {
@@ -455,11 +564,130 @@ footer ul {
     gap: 20px;
     list-style: none;
     font-size: 14px;
+    color: #283845;
 }
 
 footer p {
-    color: #bdbdbd;
+    color: #283845;
     display: flex;
     justify-content: center;
     font-size: 14px;
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .logo {
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .main-home {
+        flex-direction: column-reverse;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .main-home img {
+        width: 60%;
+    }
+
+    .judul {
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .container,
+    .school {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .teks {
+        width: 100%;
+    }
+
+    .teks p {
+        padding: 30px;
+        font-size: 1rem;
+    }
+
+    table {
+        width: 95%;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 768px) {
+    .skill-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .skill-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .card {
+        width: 90%;
+    }
+}
+
+@media (max-width: 768px) {
+    #gallery,
+    .english {
+        grid-template-columns: 1fr;
+        width: 95%;
+    }
+
+    .card2 img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .foto div {
+        width: 90%;
+    }
+
+    .foto img {
+        width: 120px;
+        height: 120px;
+    }
+}
+
+@media (max-width: 768px) {
+    .info {
+        justify-content: center;
+    }
+
+    footer {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .music-btn {
+        position: fixed;
+        bottom: 20px;
+        right: 15px;
+        width: 50px;
+        height: 50px;
+        font-size: 20px;
+    }
 }

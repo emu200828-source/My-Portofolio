@@ -160,3 +160,22 @@ for (let i = 0; i < projectsLagi.length; i++) {
 
     gallerry.appendChild(card);
 };
+
+const music = document.getElementById("bgMusic");
+const btn = document.getElementById("musicBtn");
+
+let isPlaying = false;
+
+// volume default (aman buat user)
+music.volume = 0.3;
+
+btn.addEventListener("click", () => {
+    if (isPlaying) {
+        music.pause();
+        btn.classList.remove("active");
+    } else {
+        music.play();
+        btn.classList.add("active");
+    }
+    isPlaying = !isPlaying;
+});
