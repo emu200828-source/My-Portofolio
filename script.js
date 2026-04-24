@@ -16,7 +16,7 @@ const projectsLagi = [
         tagsHtml: ["HTML"],
         tagsCss: ["CSS"],
         tagsJs: ["JavaScript"],
-        link: "https://github.com/emu200828-source/animasi-traffic-lamp.git",
+        link: " https://emu200828-source.github.io/animasi-traffic-lamp/",
     },
     {
         title: "Calculator Web Interaktif",
@@ -25,7 +25,7 @@ const projectsLagi = [
         tagsHtml: ["HTML"],
         tagsCss: ["CSS"],
         tagsJs: ["JavaScript"],
-        link: "https://github.com/emu200828-source/kalkulator.git",
+        link: "https://emu200828-source.github.io/kalkulator/",
     },
     {
         title: "My Youtube Channel",
